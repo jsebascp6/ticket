@@ -3,4 +3,5 @@ class Client < ApplicationRecord
 
   has_many :events_clients
   has_many :events, :through => :events_clients
+  has_many :invoices
 end
