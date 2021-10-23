@@ -36,6 +36,7 @@ yarn-debug.log*
 .yarn-integrity
 
 *.swp
+*.swo
 /.gems
 coverage
 malas_practicas
