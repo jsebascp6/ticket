@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(version: 2021_10_23_232704) do
     t.string "first_name", default: "", null: false
     t.string "last_name", default: "", null: false
     t.string "residence_address", default: "", null: false
-    t.integer "phone", null: false
-    t.integer "document_id", null: false
+    t.bigint "phone", null: false
+    t.bigint "document_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -58,7 +58,7 @@ ActiveRecord::Schema.define(version: 2021_10_23_232704) do
   create_table "providers", force: :cascade do |t|
     t.string "name", default: "", null: false
     t.string "address", default: "", null: false
-    t.integer "phone", null: false
+    t.bigint "phone", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
